@@ -205,7 +205,7 @@ if __name__ == '__main__':
         
         
             if callable(models[1]):
-                plt.plot(t,models[n](torch.from_numpy(t)).detach().numpy().reshape(-1))
+                plt.plot(t,models[n](torch.from_numpy(t).reshape(-1,1).float()).detach().numpy().reshape(-1))
             else:
                 plt.plot(t,models[n].detach().numpy().reshape(-1))
             plt.xlabel(tick_title)
