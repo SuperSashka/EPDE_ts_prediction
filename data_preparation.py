@@ -13,10 +13,10 @@ if not(os.path.isdir('prepared_data')):
     os.mkdir('prepared_data')
 
 
-file_number='8202026016'
+#file_number='8202026016'
 # file_number='8202026032'
 # file_number='8202026034'
-# file_number='8202026000' 
+file_number='8202026000' 
 
 
 df=pd.read_csv("{}.dat".format(file_number),sep='	',skiprows=(1),na_values='--',decimal=',')
