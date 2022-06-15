@@ -22,7 +22,7 @@
 	"print_every":null
 },
 "StopCriterion":{
-"eps":1e-6,
+"eps":1e-7,
 "tmin":1000,
 "tmax":5e6,
 "patience":5,

@@ -164,7 +164,7 @@ if __name__ == '__main__':
             
             cfg=config.Config(os.path.abspath(os.path.join(os.path.dirname( __file__ ), 'ODE_prediction.json')))
             
-            cfg.set_parameter("Matrix.cache_model",model_arch)
+            #cfg.set_parameter("Matrix.cache_model",model_arch)
 
             cfg.set_parameter("Cache.use_cache",True)
 
@@ -180,7 +180,7 @@ if __name__ == '__main__':
          
         
         
-        for n in range(len(res[0])):
+        for n in range(len(s_inp[0])):
             plt.figure()
             
             print(res[0][n].structure[0].text_form)
