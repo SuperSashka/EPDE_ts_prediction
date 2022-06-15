@@ -9,7 +9,7 @@
 "cache_dir":"../cache/",
 "cache_verbose":false,
 "save_always":false,
-"model_randomize_parameter":0
+"model_randomize_parameter":1e-5
 },
 "NN":{
 "batch_size":null,
